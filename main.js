@@ -94,6 +94,6 @@ prev.addEventListener('click', function(){
 
 random.addEventListener('click', function(){
     currentIndex = Math.floor(Math.random()* reviews.length);
-    console.log(currentIndex);
+    // console.log(currentIndex);
     showReviewer(currentIndex)
 })
