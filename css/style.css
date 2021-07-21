@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: #f1f5f8;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    color: #102a42;
+    font-size:2rem;
+    position:relative;
+}
+
+.container h1::before{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    left:47%;
+    background-color: #49a6e9;
+    width:80px;
+    height:3px;
+}
+
+.review-container{
+    background-color: #fff;
+    width:50%;
+    margin: 3rem auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.img-container{
+    width:200px;
+    height:200px;
+    margin:auto;
+    padding: 20px;
+    position: relative;
+}
+
+.img-container::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background-color: #49a6e9;
+    color: #fff;
+}
+
+.img-container::before{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: #49a6e9;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    border-radius: 50%;
+    
+}
+
+.img-container img {
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    position:relative;
+}
+
+.author{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin:0;
+    letter-spacing: .25rem;
+    font-weight: 400;
+}
+
+.job{
+    font-family: 'Open Sans', sans-serif; 
+    text-transform: uppercase;
+    color:#49a6e9;
+    font-size: 0.9rem;
+}
+
+.review{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color:#617d98;
+    padding: 5px 23px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: hsl(205, 90%, 76%);
+    font-size: 1.25rem;
+    transition: all .4s;
+}
+
+.btn:hover{
+    color:#49a6e9;
+}
+
+.random-review{
+    background-color: #ebf7ff;
+    color: #49a6e9;
+    border: 1px outset  #49a6e9;
+    border-radius: .25rem;
+    padding: 5px 8px;
+    margin: 20px 0;
+    transition: all .4s;
+}
+
+.random-review:hover{
+    background-color : #49a6e9;
+    color: #063251;
+    cursor: pointer;
+}
